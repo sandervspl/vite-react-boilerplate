@@ -1,22 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { ThemeProvider } from 'styled-components';
 
-import GlobalStyle from 'styles';
-import theme from 'styles/theme';
-
-const Home = React.lazy(() => import('pages/Home'));
+import Root from './components/Root';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <ThemeProvider theme={theme}>
-      <main>
-        <GlobalStyle />
-        <React.Suspense fallback={<span>loading</span>}>
-          <Home />
-        </React.Suspense>
-      </main>
-    </ThemeProvider>
-  </React.StrictMode>,
+  <Root />,
   document.getElementById('root'),
 );
