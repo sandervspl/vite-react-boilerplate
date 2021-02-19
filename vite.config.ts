@@ -5,6 +5,7 @@ import html from 'vite-plugin-html';
 import reactSvg from 'vite-plugin-react-svg';
 import legacy from '@vitejs/plugin-legacy';
 
+import globals from './config/globals';
 import tsconfig from './tsconfig.json';
 
 const alias: Record<string, string> = {};
@@ -49,5 +50,6 @@ export default defineConfig({
   resolve: {
     alias,
   },
+  define: globals,
 });
 
