@@ -18,6 +18,7 @@
     "baseUrl": "src",
     "paths": {
       "common/*": ["components/common/*"],
+      "ducks/*": ["ducks/*"],
       "images/*": ["static/images/*"],
       "modules/*": ["components/modules/*"],
       "pages/*": ["components/pages/*"],
