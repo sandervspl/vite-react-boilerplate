@@ -1,5 +1,6 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
+import { BrowserRouter } from 'react-router-dom';
 
 import theme from 'styles/theme';
 
@@ -8,7 +9,9 @@ import App from './App';
 const Root: React.VFC = () => {
   return (
     <ThemeProvider theme={theme}>
-      <App />
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
     </ThemeProvider>
   );
 };
