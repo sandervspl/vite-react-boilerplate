@@ -2,6 +2,7 @@ import path from 'path';
 import { defineConfig } from 'vite';
 import reactRefresh from '@vitejs/plugin-react-refresh';
 import html from 'vite-plugin-html';
+import reactSvg from 'vite-plugin-react-svg';
 
 import tsconfig from './tsconfig.json';
 
@@ -25,6 +26,9 @@ for (let key in tsconfig.compilerOptions.paths) {
 export default defineConfig({
   plugins: [
     reactRefresh(),
+    reactSvg({
+      defaultExport: 'component',
+    }),
     html({
       inject: {
         injectData: {
