@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
-import logo from './logo.svg'
-import './index.css'
+import React, { useState } from 'react';
+import logo from './logo.svg';
+import './index.css';
 
-function App() {
-  const [count, setCount] = useState(0)
+const App: React.VFC = () => {
+  const [count, setCount] = useState(0);
 
   return (
     <div className="App">
@@ -39,7 +39,7 @@ function App() {
         </p>
       </header>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
