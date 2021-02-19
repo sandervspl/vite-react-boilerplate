@@ -17,7 +17,8 @@
     "jsx": "react",
     "baseUrl": "src",
     "paths": {
-      "pages/*": ["components/pages/*"]
+      "pages/*": ["components/pages/*"],
+      "vectors/*": ["static/vectors/*"]
     }
   },
   "include": ["./src"]

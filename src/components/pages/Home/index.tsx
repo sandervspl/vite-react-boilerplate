@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import logo from './logo.svg';
+import logo from 'vectors/logo.svg';
 import './index.css';
 
 const App: React.VFC = () => {
