@@ -1,6 +1,8 @@
 import path from 'path';
 import { defineConfig } from 'vite';
 import reactRefresh from '@vitejs/plugin-react-refresh';
+import html from 'vite-plugin-html';
+
 import tsconfig from './tsconfig.json';
 
 const alias: Record<string, string> = {};
@@ -21,7 +23,16 @@ for (let key in tsconfig.compilerOptions.paths) {
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [reactRefresh()],
+  plugins: [
+    reactRefresh(),
+    html({
+      inject: {
+        injectData: {
+          title: 'vite-react-boilerplate',
+        },
+      },
+    }),
+  ],
   resolve: {
     alias,
   },
