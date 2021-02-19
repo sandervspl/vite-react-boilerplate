@@ -3,6 +3,7 @@ import { defineConfig } from 'vite';
 import reactRefresh from '@vitejs/plugin-react-refresh';
 import html from 'vite-plugin-html';
 import reactSvg from 'vite-plugin-react-svg';
+import legacy from '@vitejs/plugin-legacy';
 
 import tsconfig from './tsconfig.json';
 
@@ -35,6 +36,14 @@ export default defineConfig({
           title: 'vite-react-boilerplate',
         },
       },
+    }),
+    legacy({
+      targets: [
+        '> 0.2%',
+        'ie 11',
+        'not dead',
+        'not op_mini all',
+      ],
     }),
   ],
   resolve: {
