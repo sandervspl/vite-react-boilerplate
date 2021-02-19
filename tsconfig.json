@@ -17,6 +17,9 @@
     "jsx": "react",
     "baseUrl": "src",
     "paths": {
+      "common/*": ["components/common/*"],
+      "images/*": ["static/images/*"],
+      "modules/*": ["components/modules/*"],
       "pages/*": ["components/pages/*"],
       "vectors/*": ["static/vectors/*"],
       "styles/*": ["styles/*"],

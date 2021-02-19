@@ -1,45 +1,27 @@
-import React, { useState } from 'react';
-import logo from 'vectors/logo.svg';
-import './index.css';
+import React from 'react';
 
-const App: React.VFC = () => {
-  const [count, setCount] = useState(0);
+import GithubLogo from 'images/github-logo.png';
 
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
-        <p>
-          <button onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
-          </button>
-        </p>
-        <p>
-          Edit <code>App.tsx</code> and save to test HMR updates.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          {' | '}
-          <a
-            className="App-link"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
-        </p>
-      </header>
-    </div>
-  );
-};
+import Anchor from 'common/interaction/Anchor';
 
-export default App;
+import { GithubLink, PrimeContent, PrimeHeader, Logo } from './styled';
+
+const Prime: React.FC = () => (
+  <>
+    <PrimeHeader>
+      <Logo />
+    </PrimeHeader>
+    <PrimeContent>
+      <p>Created by <Anchor href="https://github.com/JBostelaar">@JBostelaar</Anchor> and maintained by <Anchor href="https://labela.nl/">LabelA</Anchor></p>
+      <GithubLink
+        href="https://github.com/react-prime/react-prime"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src={GithubLogo} alt="github" />
+      </GithubLink>
+    </PrimeContent>
+  </>
+);
+
+export default Prime;
