@@ -3,7 +3,7 @@ import LogoSvg from 'vectors/Logo.svg';
 
 export const Logo = styled(LogoSvg)``;
 
-export const PrimeHeader = styled.header`
+export const HomeHeader = styled.header`
   text-align: center;
   padding: 50px 10px;
   margin: 0 0 50px;
@@ -14,7 +14,7 @@ export const PrimeHeader = styled.header`
   }
 `;
 
-export const PrimeContent = styled.section`
+export const HomeContent = styled.section`
   text-align: center;
   padding: 0 10px;
   line-height: 25px;

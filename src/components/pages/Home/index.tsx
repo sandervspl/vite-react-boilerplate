@@ -5,10 +5,10 @@ import { getData } from 'slices/data/thunks';
 import { useDispatch } from 'hooks';
 import Anchor from 'common/interaction/Anchor';
 
-import { GithubLink, PrimeContent, PrimeHeader, Logo } from './styled';
+import { GithubLink, HomeContent, HomeHeader, Logo } from './styled';
 
 
-const Prime: React.FC = () => {
+const Home: React.FC = () => {
   const dispatch = useDispatch();
 
   React.useEffect(() => {
@@ -17,10 +17,10 @@ const Prime: React.FC = () => {
 
   return (
     <>
-      <PrimeHeader>
+      <HomeHeader>
         <Logo />
-      </PrimeHeader>
-      <PrimeContent>
+      </HomeHeader>
+      <HomeContent>
         <p>Created by <Anchor href="https://github.com/sandervspl">@sandervspl</Anchor></p>
         <GithubLink
           href="https://github.com/sandervspl/vite-react-boilerplate"
@@ -29,9 +29,9 @@ const Prime: React.FC = () => {
         >
           <img src={GithubLogo} alt="github" />
         </GithubLink>
-      </PrimeContent>
+      </HomeContent>
     </>
   );
 };
 
-export default Prime;
+export default Home;
