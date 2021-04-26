@@ -12,9 +12,9 @@ const Prime: React.FC = () => (
       <Logo />
     </PrimeHeader>
     <PrimeContent>
-      <p>Created by <Anchor href="https://github.com/JBostelaar">@JBostelaar</Anchor> and maintained by <Anchor href="https://labela.nl/">LabelA</Anchor></p>
+      <p>Created by <Anchor href="https://github.com/sandervspl">@sandervspl</Anchor></p>
       <GithubLink
-        href="https://github.com/react-prime/react-prime"
+        href="https://github.com/sandervspl/vite-react-boilerplate"
         target="_blank"
         rel="noopener noreferrer"
       >
