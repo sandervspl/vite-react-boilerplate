@@ -7,7 +7,7 @@ const globals = {
     APP_ENV: JSON.stringify(appEnv),
     PORT: process.env.PORT || 3000,
   },
-  __DEV__: appEnv === 'development',
+  __DEV__: env === 'development',
   __TEST__: appEnv === 'test',
   __ACC__: appEnv === 'acceptation',
   __PROD__: appEnv === 'production',
