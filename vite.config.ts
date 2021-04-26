@@ -3,19 +3,18 @@
 import { defineConfig } from 'vite';
 import reactRefresh from '@vitejs/plugin-react-refresh';
 import html from 'vite-plugin-html';
-import reactSvg from 'vite-plugin-react-svg';
+import svgr from 'vite-plugin-svgr';
 import legacy from '@vitejs/plugin-legacy';
 import tsconfigPaths from 'vite-tsconfig-paths';
 
 import globals from './config/globals';
 
+
 export default defineConfig({
   plugins: [
     reactRefresh(),
     tsconfigPaths(),
-    reactSvg({
-      defaultExport: 'component',
-    }),
+    svgr(),
     html({
       inject: {
         injectData: {

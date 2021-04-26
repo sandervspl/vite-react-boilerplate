@@ -1,19 +1,16 @@
 import styled from 'styled-components';
 
-import LogoSvg from 'vectors/Logo.svg';
+import * as LogoSvg from 'vectors/logo.svg';
 
-
-export const Logo = styled(LogoSvg)``;
+export const Logo = styled(LogoSvg.ReactComponent)`
+  width: 250px;
+`;
 
 export const HomeHeader = styled.header`
   text-align: center;
   padding: 50px 10px;
   margin: 0 0 50px;
   background: ${(props) => props.theme.colors.black};
-
-  & > svg {
-    width: 250px;
-  }
 `;
 
 export const HomeContent = styled.section`
