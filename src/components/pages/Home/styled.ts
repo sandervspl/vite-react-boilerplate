@@ -1,5 +1,7 @@
 import styled from 'styled-components';
+
 import LogoSvg from 'vectors/Logo.svg';
+
 
 export const Logo = styled(LogoSvg)``;
 
